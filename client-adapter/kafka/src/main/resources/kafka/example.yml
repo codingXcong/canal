@@ -1,0 +1,8 @@
+dataSourceKey: example
+kafkaMapping:
+  database: "mytest"
+  table: "test"
+  sql: "select id, create_date from test a"
+  etlCondition: "where a.create_time>={}"
+  topic: "canal_mytest_test"
+#commitBatch: 3000
